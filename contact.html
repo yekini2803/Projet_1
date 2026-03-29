@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style-contact.css">
+    <link rel="stylesheet" href="style-acceuil.css">
 </head>
+
 <body>
-    
+    <header id="nav-portfolio-main">
+        <div id="nav-portfolio-container">
+            <a id="nav-portfolio-logo">John Smith</a>
+            <nav id="nav-portfolio-links">
+                <ul>
+                    <li><a href="index.html" class="nav-portfolio-link">Acceuil</a></li>
+                    <li><a href="projects.html" class="nav-portfolio-link">Mes projets</a></li>
+                    <li><a href="contact.html" class="nav-portfolio-link">Mon contact</a></li>
+                    <li><a href="about.html" class="nav-portfolio-link">About me</a></li>
+                    <li><a href="blog.html" class="nav-portfolio-link">Blog</a></li>
+                    <li><a href="skills.html" class="nav-portfolio-link">Compétences</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Formulaire de contact -->
+    <section class="form-contact">
+        <h2 > Contactez-Moi</h2>
+        <h3 >JohnSmith@gmail.com</h3>
+        <form action="" class="formulaire">
+            <div class="civilite">
+                <label for="name">Nom* : </label>
+                <input type="text" name="name" placeholder="Nom">
+            </div>
+            
+            <div class="civilite">
+                <label for="prenom">Prenom : </label>
+                <input type="text" name="prenom" placeholder="prenom">
+            </div>
+            <div class="civilite">
+                <label for="email">E-mail* : </label>
+                <input type="email" name="email" placeholder="pierredupont@gmail.com" >
+            </div>
+            <div class="civilite">
+                <label for="message"> Message : </label>
+            <textarea name="message" id=""></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit">Soumettre</button>
+            </div>
+        </form>
+    </section>
+
+
 </body>
+
 </html>

@@ -47,7 +47,6 @@ a{
 
 #nav-portfolio-links{
     list-style: none;
-    display: flex;
     gap: 8px;
 }
 .nav-portfolio-link{
@@ -62,9 +61,7 @@ a{
     display: flex;
     gap: 20px;
 }
-#nav-portfolio-links li{
-    display: inline;
-}
+
 .nav-portfolio-links ul{
     list-style: none;
 }
@@ -167,7 +164,7 @@ a{
     flex: 1;
     display: flex;
     justify-content: center;
-     animation: apparition 0.7s ease forwards;
+     animation: apparition 7s ease forwards;
 
 }
 #hero-portfolio-cercle{
@@ -175,7 +172,7 @@ a{
     height: 320px;
     border-radius: 50%;
     background-color: #d6e2fb;
-    border: 5px solid #2563EB;
+    border: 5px solid #2d64db;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -188,7 +185,10 @@ a{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
+
+
 @keyframes apparition {
     from{
         opacity: 0;
@@ -205,4 +205,18 @@ a{
     50% {transform: translateY(-10px);}
     100% {transform: translateY(0px);}
     
+};
+
+@media (max-width:768px) {
+
+#hero-portfolio-section{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.nav-portfolio-links{
+    display: none;
+
+}
 }
