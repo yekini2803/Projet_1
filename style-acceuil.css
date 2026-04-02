@@ -4,6 +4,10 @@
     box-sizing: border-box;
    
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: sans-serif;
     background-color: #F0F4FF;
@@ -205,4 +209,25 @@ a{
     50% {transform: translateY(-10px);}
     100% {transform: translateY(0px);}
     
+}
+
+/* Navbar responsive */
+
+@media (max-width:768px) {
+    #nav-portfolio-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 20px;
+        
+    }
+    .nav-portfolio-link{
+    display: contents;
+      flex-wrap: wrap;
+      
+    }
+    #hero-portfolio-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }

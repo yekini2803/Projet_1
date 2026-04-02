@@ -17,14 +17,18 @@ form{
     align-items: center;
     flex-direction: column;
     width: 500px;
-    border: 2px solid #1E3A5F;
     border-radius: 20px;
    padding:  30px;
    margin: auto;
     margin-top: 1.5em;
     box-shadow: 1px 0.5px 5px #1E3A5F;
+    transition: all 2s ease-in;
 }
 
+form:hover{
+ transform: translateY(-6px);
+
+}
 
 .contact-form-input-field{
     display: flex;
@@ -40,15 +44,23 @@ input,textarea{
    border-radius: 10px;
    margin-bottom:10px;
    width: 300px;
+   outline: inherit;
+}
+
+textarea{
+    height: auto;
+    
 }
 button{
     color: #fff;
     background-color: #2563EB;
     font-size: 1em;
-    padding: 6px 3px;
+    padding: 6px 12px;
     border: transparent;
     border-radius: 5px;
+    
 }
+
 
 section h2,section h3{
     text-align: center; 
@@ -61,4 +73,19 @@ section h3,section h2{
 
 button:hover{
     background-color: #002b86;
+}
+
+@media (max-width:768px){
+    
+    .formulaire{
+        width: 100%;
+        display: flex;
+        
+    }
+    .contact-form-input-field{
+        width: 300px;
+        display: contents;
+       
+    }
+    
 }
