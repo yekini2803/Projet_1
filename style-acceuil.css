@@ -1,208 +1,131 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
 }
-body{
-    font-family: sans-serif;
-    background-color: #F0F4FF;
-    color: #1E3A5F;
-    padding: 80px;
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
-a{
-    text-decoration: none;
+
+/* Carte profil */
+.profile-card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  width: 100%;
 }
-#nav-portfolio-main{
-    position: fixed;
-    padding: 15px 0;
-    border-color: #ffffff;
-    border-bottom: 1px solid #d1daf5;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    /* background-color: #007BFF; */
+.profile-card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-#nav-portfolio-container{
-    width: 90%;
-    margin: 0 auto;
-    padding: 16px 24px;
-    display: flex;
-    justify-content: space-between;
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* Compétences */
+.skills {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  width: 100%;
+}
+.bar {
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+}
+.progress {
+  background: #4CAF50;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Projets */
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.project {
+  background: white;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.project:hover {
+  transform: scale(1.05);
+}
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Formulaire */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin: 20px 0;
+  width: 100%;
+}
+input, textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #45a049;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
     align-items: center;
-}
-#nav-portfolio-logo{
-  font-family: 'poppins',sans-serif;
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: #1E3A5F;
-
-}
-#nav-portfolio-logo:hover{
-    color:#2563EB
-
-}
-    
-
-#nav-portfolio-links{
-    list-style: none;
-    display: flex;
-    gap: 8px;
-}
-.nav-portfolio-link{
-    font-size: 0.9rem;
-    color: #64748B;
-    padding: 6px 14px;
-    border-radius: 20px;
-    transition: background-color 0.2s color 0.2s;
-}
-#nav-portfolio-links ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-#nav-portfolio-links li{
-    display: inline;
-}
-.nav-portfolio-links ul{
-    list-style: none;
-}
-.nav-portfolio-link:hover{
-    border-color: #EEF3FF;
-    color: #1E3A5F;
-
-}
-.nav-portfolio-link.actif{
-    border-color:#EEF3FF;
-    color: #2563EB;
-    font-size: 600;
-
-
-}
-
-#hero-portfolio-section{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 80px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 48px;
-    min-height: calc(100vh - 65px);
-}
-#hero-portfolio-text{
-    flex: 1;
-    animation: apparition 0.7s ease forwards;
-}
-#hero-portfolio-salut{
-    font-size: 1rem;
-    color: #64748B;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-
-}
-#hero-portfolio-title{
-    font-family:'poppins', sans-serif;
-    font-weight: 700;
-    font-size: 3.2rem;
-    color: #1E3A5F;
-    line-height: 1.1;
-    margin-bottom: 8px;
-}
-#hero-portfolio-subtitle{
-    font-family:'poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: #2563EB;
-    margin-bottom:20px ;
-}
-
-#hero-portfolio-description{
-    font-size: 1rem;
-    color: #64748B;
-    line-height: 1.8;
-    max-width: 450px;
-    margin-bottom: 36px;
-
-}
-#hero-portfolio-buttons{
-    display: flex;
-    gap: 16px;
-
-}
-.hero-portfolio-btn-main{
-    font-family:'poppins', sans-serif;
-    font-weight: 600;
-    font-size: 0.9rem;
-    background-color: #2563EB;
-    color: #ffffff;
-    padding: 12px 28px;
-    border-radius: 30px;
-    transition: background-color 0.2s transform 0.2s;
-
-}
-.hero-portfolio-btn-main:hover{
-    background-color: #1E3A5F;
-    transform: translateY(-2px);
-}
-.hero-portfolio-btn-outline{
-    font-family: 'poppins',sans-serif;
-    font-weight: 600;
-    font-size: 0.9rem;
-    background-color: transparent;
-    color: #1E3A5F;
-    padding: 12px 28px;
-    border-radius: 30px;
-    border: 2px solid #1E3A5F;
-    transition: background-color 0.2s color 0.2s;
-
-}
-.hero-portfolio-btn-outline:hover{
-    border-color: #1E3A5F;
-    color: #1E3A5F;
-    transform: translateY(-2px);
-}
-#hero-portfolio-image{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-     animation: apparition 0.7s ease forwards;
-
-}
-#hero-portfolio-cercle{
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    background-color: #d6e2fb;
-    border: 5px solid #2563EB;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 30px rgba(37,99,235,0.2);
-    animation: flottement 3s ease-in-out infinite;
-
-}
-#hero-portfolio-photo{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-@keyframes apparition {
-    from{
-        opacity: 0;
-        transform: translateY(24px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-}
-@keyframes flottement {
-    0% {transform: translateY(0px);}
-    50% {transform: translateY(-10px);}
-    100% {transform: translateY(0px);}
-    
+  }
+  .project {
+    width: 80%;
+  }
 }

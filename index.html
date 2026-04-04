@@ -1,59 +1,57 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style-acceuil.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Développeur Freelance</title>
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header id="nav-portfolio-main">
-    <div id="nav-portfolio-container">
-      <a id="nav-portfolio-logo">John Smith</a>
-      <nav id="nav-portfolio-links">
-
-        <ul>
-          <li><a href="index.html" class="nav-portfolio-link">Acceuil</a></li>
-          <li><a href="projects.html" class="nav-portfolio-link">Mes projets</a></li>
-          <li><a href="contact.html" class="nav-portfolio-link">Mon contact</a></li>
-          <li><a href="about.html" class="nav-portfolio-link">About me</a></li>
-          <li><a href="blog.html" class="nav-portfolio-link">Blog</a></li>
-          <li><a href="skill.html" class="nav-portfolio-link">Compétences</a></li>
-
-        </ul>
-      </nav>
-
+  <div class="container">
+    <!-- Carte profil -->
+    <div class="profile-card">
+      <img src="../images/logo.jpg" alt="Photo de profil">
+      <h2>John Doe</h2>
+      <div class="logo">
+        <img src="../images/logo dev.png" alt="Logo développeur">
+        <h3>Développeur Freelance</h3>
+      </div>
+      <p>Développeur Web Fullstack curieux et créatif, alliant compétences techniques JavaScript et Python pour concevoir des applications performantes. Je mets un point d'honneur à la qualité du code et à la satisfaction client.</p>
     </div>
-    </header>
 
-    <section id="hero-portfolio-section">
-      <div id="hero-portfolio-text">
-        <p id="hero-portfolio-salut">Bonjour, je suis </p>
-        <h1 id="hero-portfolio-title">John Smith</h1>
-        <h2 id="hero-portfolio-subtitle">Dévellopeur Web</h2>
-        <p id="hero-portfolio-description">Je crée des sites webs modernes et responsives.<br>Passionner par le code et le
-          design,je transforme vos idées<br>en projets concrets.</p>
-        <div id="hero-portfolio-buttons">
-          <a href="projet.html" class="hero-portfolio-btn-main">Voir mes projets</a>
-          <a href="contact.html" class="hero-portfolio-btn-outline">Me contacter</a>
-        </div>
+    <!-- Compétences -->
+    <div class="skills">
+      <p>HTML</p><div class="bar"><div class="progress" style="width:90%"></div></div>
+      <p>CSS</p><div class="bar"><div class="progress" style="width:80%"></div></div>
+      <p>JavaScript</p><div class="bar"><div class="progress" style="width:70%"></div></div>
+      <p>Python</p><div class="bar"><div class="progress" style="width:60%"></div></div>
+    </div>
 
+    <!-- Projets récents -->
+    <h3>Mes Projets</h3>
+    <div class="projects">
+      <div class="project"><img src="../images/projet1.WEBP" alt="Projet 1"><h4>Projet 1</h4><p>Description courte du projet.</p></div>
+      <div class="project"><img src="../images/projet2.WEBP" alt="Projet 2"><h4>Projet 2</h4><p>Description courte du projet.</p></div>
+      <div class="project"><img src="../images/projet3.WEBP" alt="Projet 3"><h4>Projet 3</h4><p>Description courte du projet.</p></div>
+    </div>
 
+    <!-- Formulaire de contact -->
+    <form>
+      <input type="text" placeholder="Nom">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
 
-      </div>
-
-      <div id="hero-portfolio-image">
-
-        <div id="hero-portfolio-cercle">
-
-          <img src="dev-pics.JPG" alt="photo du metier"
-            id="hero-portfolio-photo">
-
-        </div>
-      </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>Suivez-moi :
+      <a href="#">Facebook</a> |
+      <a href="#">LinkedIn</a> |
+      <a href="#">GitHub</a>
+    </p>
+  </footer>
 </body>
-
 </html>
